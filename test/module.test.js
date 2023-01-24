@@ -57,7 +57,6 @@ const testSuite = () => {
     expect(html).toContain('mdsolarsciences-hydrating-sheer-tinted-lip-balm-spf-30-pink')
   })
 
-
   test('simple rule redirect 2', async () => {
     const html = await get('/posts/mdsolarsciences-tm-tinted-lip-balm-spf-30/')
     expect(html).toContain('mdsolarsciences-tm-tinted-lip-balm-spf-30')

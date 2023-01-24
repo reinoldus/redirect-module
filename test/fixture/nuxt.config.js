@@ -16,7 +16,7 @@ module.exports = {
       'from': 'mdsolarsciences-tm-tinted-lip-balm-spf-30',
       'on': '/product/',
       'statusCode': 301,
-      'to': 'mdsolarsciences-hydrating-sheer-tinted-lip-balm-spf-30-pink',
+      'to': 'mdsolarsciences-hydrating-sheer-tinted-lip-balm-spf-30-pink'
     }
     ]
   }
