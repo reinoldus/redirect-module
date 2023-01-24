@@ -52,6 +52,17 @@ const testSuite = () => {
     expect(html).toContain('ab')
   })
 
+  test('simple rule redirect', async () => {
+    const html = await get('/product/mdsolarsciences-tm-tinted-lip-balm-spf-30/')
+    expect(html).toContain('mdsolarsciences-hydrating-sheer-tinted-lip-balm-spf-30-pink')
+  })
+
+
+  test('simple rule redirect 2', async () => {
+    const html = await get('/posts/mdsolarsciences-tm-tinted-lip-balm-spf-30/')
+    expect(html).toContain('mdsolarsciences-tm-tinted-lip-balm-spf-30')
+  })
+
   test('redirect error due to malformatted target url', async () => {
     const requestOptions = {
       uri: url('/errorInTo'),

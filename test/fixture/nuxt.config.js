@@ -11,6 +11,13 @@ module.exports = {
     { handler: require('../../') }
   ],
   redirect: {
-    rules: require('./redirects')
+    rules: require('./redirects'),
+    simpleRules: [{
+      'from': 'mdsolarsciences-tm-tinted-lip-balm-spf-30',
+      'on': '/product/',
+      'statusCode': 301,
+      'to': 'mdsolarsciences-hydrating-sheer-tinted-lip-balm-spf-30-pink',
+    }
+    ]
   }
 }
